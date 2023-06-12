@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show/Hide Additional Information</title>
+  <style>
+    .additional-info {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Projects</h1>
+  
+  <button id="toggleButton">Toggle Additional Information</button>
+  
+  <div id="additionalInfo" class="additional-info">
+    <h2>Additional Information</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Suspendisse malesuada velit vitae eros fringilla, in fringilla ex tincidunt.</p>
+  </div>
+
+  <script>
+    var toggleButton = document.getElementById('toggleButton');
+    var additionalInfo = document.getElementById('additionalInfo');
+    
+    toggleButton.addEventListener('click', function() {
+      if (additionalInfo.style.display === 'none') {
+        additionalInfo.style.display = 'block';
+      } else {
+        additionalInfo.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

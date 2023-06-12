@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+        #phone-error,#mail-error{
+            color: red;
+            }
+    </style>
+</head>
+<body>	
+<div class="main">
+	<div class="sidebar">
+			<header>HARSHANI</header>
+			<img src="logo.jpg" class="logo" width="70" height="70">
+			
+			<nav id="nav-item"></nav>
+	</div>
+	<div class="image">
+			<img src="girl1.jpg" class="girl" align="right">
+	</div>
+	<div class="info">
+		<h1>Contact<span>Me!</span></h1><br>
+	</div>
+	
+	<div class="contact" id="contact">
+	<form action="#">
+		<div class="input-box">
+			<input type="text" placeholder="Full Name" id="name">
+			<input type="text" placeholder="Email Addess" id="email" onkeyup="email()"required><p id="mail-error"></p>
+		</div>
+		
+		<div class="input-box">
+			<input type="text" placeholder="Mobile Number" id="pnumber" onkeyup="validatePhone()"required><p id="phone-error"></p>
+			<input type="text" placeholder="Subject" id="sub">
+		
+		</div>
+		<textarea name="" id="" cols="20" rows="5" placeholder="Your Message" id="mess"></textarea>
+		
+		<input type="submit" value="Send Message" class="btn" onclick="empty()">
+	</form>
+	</div>
+	</div>
+<script src="jscripts.js"></script>
+</body>
+</html>
